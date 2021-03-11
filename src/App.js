@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import {Button, Card} from 'react-bootstrap';
+import News from './components/News/News';
+import Header from './components/Header/Header';
+import TopHeadline from './components/TopHeadline/TopHeadline';
+import TestFragment from './components/TestFragment/TestFragment';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h2>React bootstrap</h2>
+      <Header></Header>
+      <TestFragment></TestFragment>
+      <TopHeadline></TopHeadline>
     </div>
   );
 }
